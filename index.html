@@ -4,43 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Gib dem Gedicht ein Thema"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Überschrift
-        <br />
-        Gedicht
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/JacyDee274" target="_blank">Jacky Ilievski</a>
-      and is open-sourced on
-      <a
-        href="https://github.com/JacyDee274/my-ai-poem-generator"
-        target="_blank"
-        >Git Hub</a
-      >
-      and is hosted on
-      <a href="https://jackys-ai-poem-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Gib dem Gedicht ein Thema"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="poem-button" />
+        </form>
+        <div class="poem">
+          Überschrift
+          <br />
+          Gedicht
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/JacyDee274" target="_blank"
+          >Jacky Ilievski</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/JacyDee274/my-ai-poem-generator"
+          target="_blank"
+          >Git Hub</a
+        >
+        and is hosted on
+        <a href="https://jackys-ai-poem-generator.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
